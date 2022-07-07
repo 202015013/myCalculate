@@ -1,5 +1,4 @@
 import java.util.*;
-
 class Input extends ChangeFortToArray {
     ChangeFortToArray ChangedArray = new ChangeFortToArray();
     public String[] run() {

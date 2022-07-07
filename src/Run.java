@@ -10,7 +10,7 @@ class Run extends Input {
         arithmeticOperations.add(fort);
         arithmeticOperations.sub(fort);
 
-        System.out.print("answer is >> "+i.getResult(fort));
+        System.out.print(">>> "+i.getResult(fort));
     }
     private double getResult(String[] fortArray) {
 
