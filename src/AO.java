@@ -1,31 +1,31 @@
 //arithmetic operations
 class AO extends Calculate {
     @Override
-    protected void add(String[] fortArray) {
-        if (FindOp(fortArray, "+") == true) {
-            super.add(fortArray);
-            add(fortArray);
+    protected void add(String[] formulaArray) {
+        if (FindOp(formulaArray, "+") == true) {
+            super.add(formulaArray);
+            add(formulaArray);
         }
     }
     @Override
-    protected void sub(String[] fortArray) {
-        if (FindOp(fortArray, "-") == true) {
-            super.sub(fortArray);
-            sub(fortArray);
+    protected void sub(String[] formulaArray) {
+        if (FindOp(formulaArray, "-") == true) {
+            super.sub(formulaArray);
+            sub(formulaArray);
         }
     }
     @Override
-    protected void mul(String[] fortArray) {
-        if (FindOp(fortArray, "*") == true) {
-            super.mul(fortArray);
-            mul(fortArray);
+    protected void mul(String[] formulaArray) {
+        if (FindOp(formulaArray, "*") == true) {
+            super.mul(formulaArray);
+            mul(formulaArray);
         }
     }
     @Override
-    protected void dis(String[] fortArray) {
-        if (FindOp(fortArray, "/") == true) {
-            super.dis(fortArray);
-            dis(fortArray);
+    protected void dis(String[] formulaArray) {
+        if (FindOp(formulaArray, "/") == true) {
+            super.dis(formulaArray);
+            dis(formulaArray);
         }
     }
 }

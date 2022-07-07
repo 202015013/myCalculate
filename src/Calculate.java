@@ -1,18 +1,18 @@
 class Calculate extends SubCalculate {
     @Override
-    protected void add(String[] fortArray) {
-        makeIndex(fortArray,"+");
+    protected void add(String[] formulaArray) {
+        makeIndex(formulaArray,"+");
     }
     @Override
-    protected void sub(String[] fortArray) {
-        makeIndex(fortArray,"-");
+    protected void sub(String[] formulaArray) {
+        makeIndex(formulaArray,"-");
     }
     @Override
-    protected void mul(String[] fortArray) {
-        makeIndex(fortArray,"*");
+    protected void mul(String[] formulaArray) {
+        makeIndex(formulaArray,"*");
     }
     @Override
-    protected void dis(String[] fortArray) {
-        makeIndex(fortArray,"/");
+    protected void dis(String[] formulaArray) {
+        makeIndex(formulaArray,"/");
     }
 }

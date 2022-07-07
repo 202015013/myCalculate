@@ -1,12 +1,12 @@
 import java.util.*;
-class Input extends ChangeFortToArray {
-    ChangeFortToArray ChangedArray = new ChangeFortToArray();
+class Input extends ChangeFormulaToArray {
+    ChangeFormulaToArray ChangedArray = new ChangeFormulaToArray();
     public String[] run() {
         System.out.print("input >>> ");
         Scanner scan = new Scanner(System.in);
 
-        String fort = scan.next();
+        String formula = scan.next();
 
-        return ChangedArray.StrToArrayChange(fort);
+        return ChangedArray.StrToArrayChange(formula);
     }
 }

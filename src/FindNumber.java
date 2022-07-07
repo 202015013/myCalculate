@@ -1,9 +1,9 @@
 class FindNumber extends FindOperator {
-    int FindNumberLeft(String[] fortArray, int indexOfOperator) {
+    int FindNumberLeft(String[] formulaArray, int indexOfOperator) {
         int indexCount = 1;
 
         while (true) {
-            if (indexOfOperator-indexCount >= 0 && fortArray[indexOfOperator - indexCount] == null) {
+            if (indexOfOperator-indexCount >= 0 && formulaArray[indexOfOperator - indexCount] == null) {
                 indexCount++;
             } else {
                 break;
@@ -12,11 +12,11 @@ class FindNumber extends FindOperator {
         return indexOfOperator-indexCount;
     }
 
-    protected int FindNumberRight(String[] fortArray, int indexOfOperator) {
+    protected int FindNumberRight(String[] formulaArray, int indexOfOperator) {
         int indexCount = 1;
 
         while (true) {
-            if (indexOfOperator+indexCount<=fortArray.length-1 && fortArray[indexOfOperator + indexCount] == null) {
+            if (indexOfOperator+indexCount<=formulaArray.length-1 && formulaArray[indexOfOperator + indexCount] == null) {
                 indexCount++;
             } else {
                 break;
