@@ -1,5 +1,5 @@
 class FindNumber extends FindOperator {
-    int FindNumberLeft(String[] formulaArray, int indexOfOperator) {
+    int findNumberLeft(String[] formulaArray, int indexOfOperator) {
         int indexCount = 1;
 
         while (true) {
@@ -12,7 +12,7 @@ class FindNumber extends FindOperator {
         return indexOfOperator-indexCount;
     }
 
-    protected int FindNumberRight(String[] formulaArray, int indexOfOperator) {
+    protected int findNumberRight(String[] formulaArray, int indexOfOperator) {
         int indexCount = 1;
 
         while (true) {

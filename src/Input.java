@@ -1,5 +1,5 @@
 import java.util.*;
-class Input extends ChangeFormulaToArray {
+class Input {
     ChangeFormulaToArray ChangedArray = new ChangeFormulaToArray();
     public String[] run() {
         System.out.print("input >>> ");
@@ -7,6 +7,6 @@ class Input extends ChangeFormulaToArray {
 
         String formula = scan.next();
 
-        return ChangedArray.StrToArrayChange(formula);
+        return ChangedArray.changeStrToArray(formula);
     }
 }

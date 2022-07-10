@@ -1,16 +1,16 @@
 class Run extends Input {
     public static void main(String[] args) {
-        Run i = new Run();
+        Run start = new Run();
         AO arithmeticOperations = new AO();
 
-        String[] formula = i.run();
+        String[] formula = start.run();
 
         arithmeticOperations.mul(formula);
         arithmeticOperations.dis(formula);
         arithmeticOperations.add(formula);
         arithmeticOperations.sub(formula);
         try {
-            System.out.print(">>> " + i.getResult(formula));
+            System.out.print(">>> " + start.getResult(formula));
         }catch (IllegalArgumentException e){
             System.out.println("you input wrong formula");
         }
